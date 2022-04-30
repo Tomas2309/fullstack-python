@@ -1,0 +1,9 @@
+body{background-color: #193b86;
+    margin-left: 1vw;
+    margin-right: 1vw;}
+.container{ display: grid;
+    grid-template: 118em/ 40em 40em;
+    grid-template-areas: "formulario imagen";
+    background-color: blueviolet;
+    border-radius: 5px;
+    overflow: visible;}
