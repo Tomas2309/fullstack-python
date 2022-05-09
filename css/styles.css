@@ -2,7 +2,7 @@ body{background-color: #193b86;
       margin-left: 1vw;
       margin-right: 1vw;}
 .container{ display: grid;
-            grid-template: 25em 3.5em 30em 20em 20em 20em 10em/ 77em;
+            grid-template: 25em 3.5em 40em 20em 20em 20em 10em/ 77em;
             grid-template-areas: "header"
                                  "nav"
                                  "contenido1"
@@ -35,7 +35,7 @@ body{background-color: #193b86;
           font-family: 'Cantata One', serif,Helvetica, sans-serif;}
 .menu{text-align: center;
       padding-top: 10px;
-      padding-bottom:13px;
+      padding-bottom:30px;
       overflow: hidden;
       background-color: rgb(63, 4, 69);
       border: solid rgb(232, 183, 22) 4px;
@@ -43,18 +43,27 @@ body{background-color: #193b86;
 
 .nav-item{padding-left: 20px;
           padding-right: 20px;
+          padding-top: 10px;
+          position: relative;
+          top: 10px;
           background-color: #941111;
           margin-left: 20px;
           margin-right:  20px;
           border: rgb(5, 21, 120) solid;
           border-radius: 15px;
           border-width: 5px;
+          font-size: 16px;
           color: rgb(255, 255, 255);
-          text-decoration: none;}
+          text-decoration: none;
+          padding-bottom: 10px;}
 .nav{position: sticky;
-      top: 0%;}
+      top: 0%;
+      z-index: 2;}
 
 .contenido1{grid-area: contenido1;}
+.oportunidadfoto{max-height: 33.8em;
+            width: 65.8em;
+            border:groove goldenrod 16px;}
 .contenido2{grid-area: contenido2;}
 .contenido3{grid-area: contenido3;}
 .contenido4{grid-area: contenido4;}
