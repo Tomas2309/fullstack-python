@@ -1,23 +1,20 @@
-body{background-color: #193b86;
-      margin-left: 1vw;
-      margin-right: 1vw;}
+body{background-color: #193b86;}
 .container{ display: grid;
-            grid-template: 25em 3.5em 40em 20em 20em 20em 10em/ 77em;
+            grid-template: 25em 2.4em 42em 20em 20em 20em 10em/ 78em;
             grid-template-areas: "header"
                                  "nav"
                                  "contenido1"
                                  "contenido2"
                                  "contenido3"
                                  "contenido4"
-                                 "footer";            
-            border-radius: 5px;
+                                 "footer";   
             overflow: visible;}
 .item{
       background-color:rgba(255, 255, 255, 0.966); 
+      margin:-1em -0.5em -0.5em -0.5em;
       overflow: visible;}
 .header{
-      background-color: rgba(255, 255, 255, 0.966);
-      border: solid goldenrod;}
+      background-color: rgba(255, 255, 255, 0.966);}
 .fondo{height:400px;
       width: 650px;
       border-top-right-radius: 5px;
@@ -35,10 +32,10 @@ body{background-color: #193b86;
           font-family: 'Cantata One', serif,Helvetica, sans-serif;}
 .menu{text-align: center;
       padding-top: 10px;
-      padding-bottom:30px;
+      padding-bottom:2.4em;
       overflow: hidden;
-      background-color: rgb(63, 4, 69);
-      border: solid rgb(232, 183, 22) 4px;
+      background-color: rgb(0, 1, 6);
+      border: solid rgb(232, 183, 22) 2px;
       border-radius: 0px 0px 10px 10px;}
 
 .nav-item{padding-left: 20px;
@@ -49,7 +46,6 @@ body{background-color: #193b86;
           background-color: #941111;
           margin-left: 20px;
           margin-right:  20px;
-          border: rgb(5, 21, 120) solid;
           border-radius: 15px;
           border-width: 5px;
           font-size: 16px;
@@ -57,13 +53,23 @@ body{background-color: #193b86;
           text-decoration: none;
           padding-bottom: 10px;}
 .nav{position: sticky;
-      top: 0%;
+      top: 0;
       z-index: 2;}
 
-.contenido1{grid-area: contenido1;}
+.contenido1{grid-area: contenido1;
+            margin-top: 1em;}
+.publicidad{display: grid;
+            grid-template: 42em/62em 17em;
+            grid-template-areas: "oportunidadfoto desfoto";}
+.textopublicitario{
+      text-align: center;}
 .oportunidadfoto{max-height: 33.8em;
-            width: 65.8em;
+            width: 60em;
             border:groove goldenrod 16px;}
+.desfoto{
+      background-color: #dedb27;
+font-size: 2em;
+font-family: Verdana, Geneva, Tahoma, sans-serif;}
 .contenido2{grid-area: contenido2;}
 .contenido3{grid-area: contenido3;}
 .contenido4{grid-area: contenido4;}
