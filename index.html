@@ -17,9 +17,10 @@
             <span>
                 <a href="inmuebles/DeptoCabello/Cabello.html"><img class="fondo" src="inmuebles/DeptoCabello/Cabello.jpg" alt="Cabello"></a>
             </span>
-            <span>
+            <span><a href="index.html" class="enesc">
                 <img class="logo_prin" src="imagenes/favicon.png" alt="New Oro Propiedades">
                 <div><h1 class="titulo1">New Oro Propiedades</h1></div>
+            </a>
             </span>
         </div>      
         <div class="item nav">
@@ -36,18 +37,71 @@
             <h2 class="textopublicitario">Gran oportunidad!!!</h2>
             <div class="publicidad">
               <a href="inmuebles/DeptoTalcahuano/Talcahuano.html"><img class="oportunidadfoto" src="inmuebles/DeptoTalcahuano/Talcahuano.jpg" alt="Talcahuano"></a>
-              <span class="desfoto"><h3>Talcahuano 2000</h3> Departamento de 3 ambientes ubicado en Talcahuano al 2000 con dos dormitorios, 1 en suite - Amplio living con salida a un balcon corrido</span>
+              <span class="desfoto"><h3 class="titulodepto">Talcahuano 2000</h3> Departamento de 3 ambientes ubicado en Talcahuano al 2000 con dos dormitorios, 1 en suite - Amplio living con salida a un balcon corrido</span>
             </div>
         </div>
         
-        <div class="item contenido2">CONTENIDO2</div>
-        
-        <div class="item contenido3">CONTENIDO3</div>
-        
-        <div class="item contenido4">CONTENIDO4</div>
-        
+        <div class="item contenido2">
+            <header>
+                <nav class="buscador">
+                    <ul>
+                        <li><a href="#">Operacion</a>
+                            <ul>
+                                <li><a href="#">Alquileres</a></li>
+                                <li><a href="#">Comprar</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Zona</a>
+                            <ul>
+                                <li><a href="#">Palermo</a></li>
+                                <li><a href="#">Barrio Norte</a></li>
+                                <li><a href="#">Belgrano</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Tipo de inmueble</a>
+                            <ul>
+                                <li><a href="#">Departamento</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Ambientes</a>
+                            <ul>
+                                <li><a href="#">3 Ambientes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Valor</a>
+                            <form class="valores" action="">
+                                <p>Valor Minimo</p>
+                                <div>
+                                    <label for="pminimo"></label>
+                                    <input type="number" name="pminimo" id="pminimo">
+                                </div>
+                                <p>Valor Maximo</p>
+                                <div>
+                                    <label for="pmaximo"></label>
+                                    <input type="number" name="pmaximo" id="pmaximo">
+                                </div>
+                                <div class="boton-enviar">
+                                    <input type="submit" value="Enviar">
+                                    <span><input type="reset" value="Borrar"></span>
+                                </div>
+                            </form>
+                        </li> 
+                        <div><img src="imagenes/favicon.png" alt="logo_prin" class="imgbus"></div>
+                    </ul>
+                </nav>
+            </header>
+        </div>       
+        <div class="item contenido3">
+            <h3>Donde encontrarnos</h3>
+            <div class="text-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.590807022479!2d-58.438730200000016!3d-34.56391449999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5b78b0fb78b%3A0x18fb9f1ce0a23617!2sMigueletes%201188%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1652453376845!5m2!1ses!2sar" class="mapa" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
+                <span class="colectivos">Estamos ubicados en pleno Palermo, a una cuadra de Av Libertador y a tres cuadras de Av Luis Maria Campos. <br>
+                Lineas de colectivos cercanas a la oficina:
+                <br><br>59, 42, 130, 118, 55, 60, 15, 29, 64</span>
+            </div>
+        </div>
+        <div class="item contenido4"></div>      
         <div class="item footer">FOOTER</div>
-
     </section>
 </body>
 </html>

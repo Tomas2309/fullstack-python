@@ -1,6 +1,6 @@
-body{background-color: #193b86;}
+body{background-color: rgb(241, 244, 247);}
 .container{ display: grid;
-            grid-template: 25em 2.4em 42em 20em 20em 20em 10em/ 78em;
+            grid-template: 25em 2.4em 45.2em 12em 40em 30em 10em/ 78em;
             grid-template-areas: "header"
                                  "nav"
                                  "contenido1"
@@ -10,11 +10,11 @@ body{background-color: #193b86;}
                                  "footer";   
             overflow: visible;}
 .item{
-      background-color:rgba(255, 255, 255, 0.966); 
+      background-color:rgb(241, 244, 247); 
       margin:-1em -0.5em -0.5em -0.5em;
       overflow: visible;}
 .header{
-      background-color: rgba(255, 255, 255, 0.966);}
+      background-color: rgb(241, 244, 247);}
 .fondo{height:400px;
       width: 650px;
       border-top-right-radius: 5px;
@@ -30,6 +30,7 @@ body{background-color: #193b86;}
           color: black;
           text-align: center;
           font-family: 'Cantata One', serif,Helvetica, sans-serif;}
+.enesc{text-decoration: none;}
 .menu{text-align: center;
       padding-top: 10px;
       padding-bottom:2.4em;
@@ -62,16 +63,68 @@ body{background-color: #193b86;}
             grid-template: 42em/62em 17em;
             grid-template-areas: "oportunidadfoto desfoto";}
 .textopublicitario{
-      text-align: center;}
-.oportunidadfoto{max-height: 33.8em;
+      text-align: center;
+      font-size: 3em;}
+.oportunidadfoto{max-height: 33em;
             width: 60em;
             border:groove goldenrod 16px;}
+.titulodepto{margin-bottom: 0.4em;}
 .desfoto{
       background-color: #dedb27;
-font-size: 2em;
-font-family: Verdana, Geneva, Tahoma, sans-serif;}
+      border: groove goldenrod 16px;
+      border-left: none;
+      font-size: 1.9em;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      max-height: 17.3em;
+      text-align: center;}
 .contenido2{grid-area: contenido2;}
+.contenido2 img{width: 8em;
+                padding-right: 2em;}
+.contenido2 nav{display: flex;
+                justify-content: space-around;}
+.contenido2 nav ul{list-style: none;
+                  display: flex;
+                  justify-content: space-between;}
+li a{text-decoration: none;
+      font-size: 1.6em;
+      color: black;
+      padding: 1em 20px;
+      display: block;}
+li a:hover{background: #941111;}
+.contenido2 nav ul li ul{display: flex;
+                        flex-direction: column;
+                        position: absolute;           
+                        display: none;}
+.contenido2 nav ul li .valores{display: flex;
+                        flex-direction: column;
+                        position: absolute;
+                        display: none;
+                  background-color: #193b86;}
+.contenido2 nav ul li:hover > ul{display: block;
+                                    margin-top: 1em;}
+.contenido2 nav ul li:hover > .valores{display: block;
+                                    margin-top: 1em;}
+.contenido2 nav ul li ul li{display: block;
+                            background-color: #193b86;
+                            position: relative;
+                            right: 2.5em;}
+nav ul li{background-color: crimson;
+          margin-right: 2em;
+          border: ridge black 2px;}
+.buscador{background-color: #193b86;
+         margin: 4em;
+         border-radius: 2em;}
 .contenido3{grid-area: contenido3;}
+.contenido3 h3{text-align: center;
+               font-size:3em;}
+.text-mapa{display: grid;
+      grid-template: 20em/43em 30em;
+      grid-template-areas: "mapa textomap";}
+.colectivos{padding-top: 3em;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight:400;
+            font-size: 1.7em;}
+.mapa{margin-left: 3em;
+       border: #193b86 solid;}
 .contenido4{grid-area: contenido4;}
 .footer{grid-area: footer;}
-
