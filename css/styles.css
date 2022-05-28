@@ -1,14 +1,15 @@
-body{background-color: rgb(241, 244, 247);}
+body{background-color: rgb(241, 244, 247);
+      margin-top: -1em;}
+
 .container{ display: grid;
-            grid-template: 25em 2.4em 45.2em 12em 40em 30em 10em/ 78em;
+            grid-template: 25em 2.4em 45.2em 37em 40em 30em 6em/ 76em;
             grid-template-areas: "header"
                                  "nav"
                                  "contenido1"
                                  "contenido2"
                                  "contenido3"
                                  "contenido4"
-                                 "footer";   
-            overflow: visible;}
+                                 "footer"; }
 .item{
       background-color:rgb(241, 244, 247); 
       margin:-1em -0.5em -0.5em -0.5em;
@@ -35,13 +36,11 @@ body{background-color: rgb(241, 244, 247);}
       padding-top: 10px;
       padding-bottom:2.4em;
       overflow: hidden;
-      background-color: rgb(0, 1, 6);
+      background-color: #050e22;
       border: solid rgb(232, 183, 22) 2px;
       border-radius: 0px 0px 10px 10px;}
 
-.nav-item{padding-left: 20px;
-          padding-right: 20px;
-          padding-top: 10px;
+.nav-item{padding: 10px 20px 10px 20px;
           position: relative;
           top: 10px;
           background-color: #941111;
@@ -50,9 +49,9 @@ body{background-color: rgb(241, 244, 247);}
           border-radius: 15px;
           border-width: 5px;
           font-size: 16px;
-          color: rgb(255, 255, 255);
           text-decoration: none;
-          padding-bottom: 10px;}
+          display: inline-block;
+          word-wrap: break-word;}
 .nav{position: sticky;
       top: 0;
       z-index: 2;}
@@ -60,62 +59,29 @@ body{background-color: rgb(241, 244, 247);}
 .contenido1{grid-area: contenido1;
             margin-top: 1em;}
 .publicidad{display: grid;
-            grid-template: 42em/62em 17em;
-            grid-template-areas: "oportunidadfoto desfoto";}
+            grid-template: 42em/60% 40%;
+            grid-template-areas: "oportunidadfoto desfoto";
+            margin-left: 1%;}
 .textopublicitario{
       text-align: center;
       font-size: 3em;}
 .oportunidadfoto{max-height: 33em;
-            width: 60em;
             border:groove goldenrod 16px;}
 .titulodepto{margin-bottom: 0.4em;}
 .desfoto{
-      background-color: #dedb27;
+      background-color: #409fc4;
       border: groove goldenrod 16px;
-      border-left: none;
       font-size: 1.9em;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       max-height: 17.3em;
       text-align: center;}
-.contenido2{grid-area: contenido2;}
-.contenido2 img{width: 8em;
-                padding-right: 2em;}
-.contenido2 nav{display: flex;
-                justify-content: space-around;}
-.contenido2 nav ul{list-style: none;
-                  display: flex;
-                  justify-content: space-between;}
-li a{text-decoration: none;
-      font-size: 1.6em;
-      color: black;
-      padding: 1em 20px;
-      display: block;}
-li a:hover{background: #941111;}
-.contenido2 nav ul li ul{display: flex;
-                        flex-direction: column;
-                        position: absolute;           
-                        display: none;}
-.contenido2 nav ul li .valores{display: flex;
-                        flex-direction: column;
-                        position: absolute;
-                        display: none;
-                  background-color: #193b86;}
-.contenido2 nav ul li:hover > ul{display: block;
-                                    margin-top: 1em;}
-.contenido2 nav ul li:hover > .valores{display: block;
-                                    margin-top: 1em;}
-.contenido2 nav ul li ul li{display: block;
-                            background-color: #193b86;
-                            position: relative;
-                            right: 2.5em;}
-nav ul li{background-color: crimson;
-          margin-right: 2em;
-          border: ridge black 2px;}
-.buscador{background-color: #193b86;
-         margin: 4em;
-         border-radius: 2em;}
+.contenido2{grid-area: contenido2;
+      margin-bottom:2em;}
+.contenido2 p{font-size: 1.5em;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      padding:0em 5em 0em 5em;}
 .contenido3{grid-area: contenido3;}
-.contenido3 h3{text-align: center;
+.item >h3{text-align: center;
                font-size:3em;}
 .text-mapa{display: grid;
       grid-template: 20em/43em 30em;
@@ -123,8 +89,78 @@ nav ul li{background-color: crimson;
 .colectivos{padding-top: 3em;
             font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-weight:400;
-            font-size: 1.7em;}
-.mapa{margin-left: 3em;
-       border: #193b86 solid;}
+            font-size: 1.7em;
+            margin-left: 0.3em;}
+.mapa{margin-left: 2em;
+       border: #193b86 solid;
+       width:90%;
+       height:130%;}
 .contenido4{grid-area: contenido4;}
-.footer{grid-area: footer;}
+.conj-fotos{display: flex;
+            margin-left: 1em;}
+.fotos-cartelera{width: 18em;
+height: 16em;}
+.footer{grid-area: footer;
+      display: flex;
+      background-color: #050e22;
+      color: rgb(253, 251, 208);
+padding-left: 1em;}
+.logo{width: 3em;
+      height: 3em;
+      padding-top: 0.5em;}
+.text-footer{margin-top: -0.5em;
+            margin-left: auto;}
+#text-f-nop{margin-top: -0.5em;
+            margin-left: auto;
+            font-size: 2.5em;}
+.departamentos{margin: 50px 10px 10px 10px;
+      background-color: rgb(188, 36, 176);
+      word-wrap: break-word;
+      border: solid;}
+.articulos-deptos{border: solid rgb(12, 12, 39) 2px;
+            display:block;}
+.des{display: inline-flex;}
+.departamentos article h3{text-align: center;}
+.parte1 img{max-width: 90%;
+            min-width: 60%;
+            max-height: 30em;
+            margin-left: 3%;}
+.parte2{max-width: 50%;
+      margin-right: 2%;}
+a{text-decoration: none;}
+a:link,:visited,:hover,:active{color: black;}
+.nav-item{color: white;}
+.calle{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #001168;
+      font-weight: bold;
+      font-size: 180%;
+      background: #00ff04;}
+.calle span{margin-left: 10%;
+      color: white;
+      padding: 1%;
+      animation: girologo 5s ease 0.5s infinite normal forwards running;}
+
+@media only screen and (max-width: 600px){
+      .body,.container,.conj-fotos,.header,.nav,.contenido1,.contenido2,.contenido3,.contenido4,.item,.fondo,.fotos-cartelera,.titulo1,.enesc,.menu,.publicidad,.nav-item,.textopublicitario,.oportunidadfoto,.titulodepto,.desfoto,.contenido2 p,.item>h3,.text-mapa,.colectivos,.mapa,.logo,.footer{
+            max-width: 95.5vw;
+            display:block;}
+      .fondo{max-width: 95.5vw;
+            max-height: 80vh;}
+      .titulo1,.enesc{display: none;}
+      .nav{position: relative;}
+      .nav-item{margin-bottom: 0.5em;}
+      .menu{height: 16em;}
+      .oportunidadfoto{max-width: 95.5vw;
+      border: none;}
+      .contenido1{height: 64em;}
+      .contenido2 p{padding: 0 0.5em 0 0.5em;}
+      .contenido2 h3{margin-top: -1em;}
+      .des{display: block;}}
+
+@keyframes girologo{
+      0%{background-color: #00ff04;}
+      25%{background-color: #1b0ada;}
+      50%{background-color: #14c142;}
+      75%{background-color: #0913d0;}
+      100%{background-color: rgb(72, 255, 0);}
+  }

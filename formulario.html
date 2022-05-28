@@ -8,11 +8,50 @@
     <link rel="stylesheet" href="css/stylesform.css">
     <title>New Oro Propiedades</title>
 </head>
-<body>
-    <section class="container">
-        <span>HOLA</span>
-        <span>ADIOS</span>
-    </section>
-    
-</body>
+    <body>  
+        <div class="uno"> 
+            <div class="nav">
+                <nav class="menu">
+                    <a href="index.html"class="nav-item">Inicio</a>
+                    <a href="compra-alquiler.html"class="nav-item">Alquileres</a>
+                    <a href="compra-alquiler.html"class="nav-item">Venta</a>
+                    <a href="index.html#ubicacion"class="nav-item">Ubicacion</a>
+                    <a href="formulario.html"class="nav-item">Contacto</a>
+                    <a href="index.html#quienes-somos"class="nav-item">Quienes somos</a>
+                </nav>
+            </div> 
+            <div class="dos">
+                <span id="form">
+                    <form action="mailto:tomasa@neworoprop.com.ar" name="formulario" method="get">
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" class="ll" name="nombre" id="nombre" >
+                        <br>
+                        <label for="apellido">Apellido: </label>
+                        <input type="text" class="ll" name="apellido" id="apellido" required>
+                        <legend>Motivo de la consulta (Puede escoger mas de una opcion): <br>
+                            Comprar<input type="checkbox" name="motivo" id="motivo">
+                            Alquileres<input type="checkbox" name="motivo" id="motivo">
+                            Otros<input type="checkbox" class="ll" name="motivo" id="motivo">
+                        </legend>
+                        <label for="telefono">Telefono de Contacto: </label>
+                        <input type="tel" name="telefono" class="ll" id="telefono" size="20"><br>
+                        <label for="mail">Mail de Contacto: </label>
+                        <input type="email" size="35" name="mail" class="ll"id="mail"><br>
+                        <label for="fecha">Fecha de la consulta</label>
+                        <input type="date" name="fecha" class="ll" id="fecha">
+                        <br>
+                        <label for="nombre">Escribi tu consulta: </label>
+                        <br>
+                        <textarea name="mensaje" id="mensaje" cols="40" rows="8" ></textarea>
+                        <div>
+                        <input type="submit" class="boton" value="Enviar">
+                        <span><input type="reset" value="Borrar"></span>
+                        </div>
+                    </form>
+                </span>
+                <span id="logo-for"><img src="imagenes/favicon.png" alt="New Oro Propiedades" id="logo"></span>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
 </html>

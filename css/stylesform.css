@@ -1,9 +1,78 @@
-body{background-color: #193b86;
-    margin-left: 1vw;
-    margin-right: 1vw;}
-.container{ display: grid;
-    grid-template: 118em/ 40em 40em;
-    grid-template-areas: "formulario imagen";
-    background-color: blueviolet;
-    border-radius: 5px;
-    overflow: visible;}
+body{display: block;
+    background-color: #193b86;
+    margin: 0.5em;}
+.uno{max-width: 77rem;
+    min-width: 77rem;
+    margin: 0.5em;}
+.nav{background-color: black;}
+.menu{text-align: center;
+    padding-top: 10px;
+    padding-bottom:2.4em;
+    overflow: hidden;
+    background-color: #050e22;
+    border: solid rgb(232, 183, 22) 2px;
+    border-radius: 0px 0px 10px 10px;}
+.nav-item{padding: 10px 20px 10px 20px;
+    position: relative;
+    top: 10px;
+    background-color: #941111;
+    margin-left: 20px;
+    margin-right:  20px;
+    border-radius: 15px;
+    border-width: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    word-wrap: break-word;}
+.dos{display: block;
+    animation: girologo 5s ease 0.5s infinite normal forwards running;
+    }
+#form{display: block;
+      background-color: yellow;
+      padding: 8em 3em;
+      width: 25em;}
+#logo-for{display: block;
+        background-color: aliceblue;
+        padding-right: 27.5em;
+        width: 19em;
+        animation: girologo 5s ease 0.5s infinite normal forwards running;}
+#logo{position: absolute;
+        top: 20em;
+        left: 47em;
+        animation: girologo 5s ease 0.5s infinite normal forwards running;
+        border-radius:1em;}
+.ll{margin-bottom: 1.5em;}
+@keyframes girologo{
+    0%{background-color: #000000;}
+    25%{background-color: #12156c;}
+    50%{background-color: #5b1995;}
+    75%{background-color: #131a4b;}
+    100%{background-color: rgb(0, 0, 0);}
+}
+@media only screen and (max-width: 350px){
+    body,.uno,.ll,#logo,.dos,.nav-item,.menu,.nav{display: block;
+        max-width: 350px}
+        #logo-for{display: none;}
+        .nav{position: relative;}
+        .nav-item{margin-bottom: 0.5em;}
+        .menu{height: 10em;}
+}
+@media only screen and (max-width: 500px){
+    body,.uno,.ll,#logo,.dos,.nav-item,.menu,.nav{display: block;
+        max-width: 500px}
+        #logo-for{display: none;}
+        .nav{position: relative;}
+        .nav-item{margin-bottom: 0.5em;}
+        .menu{height: 16em;}
+}
+@media only screen and (max-width: 200px){
+    body,.uno,.ll,#logo,.dos,.nav-item,.menu,.nav{display: block;
+        max-width: 200px}
+        #logo-for{display: none;}
+        .nav{position: relative;}
+        .nav-item{margin-bottom: 0.5em;
+            font-size: 50%;}
+        .menu{height: 11em;
+        }
+}
